@@ -33,12 +33,18 @@ vim 123.txt // 123이 제목인 텍스트 파일을 생성
 
 위와 같은 명령어로 텍스트 파일 뿐만 아니라 프로그래밍 언어 파일도 편집 가능하다.
 
-### Git 기초
-#### 커밋
-- git의 기본 단위로, 유의미한 변화가 있을 때 커밋을 만든다.
-- 커밋의 기준은 one commit per logical change
+### commit
+#### 정의
+  - The "commit" command is used to save your changes to the local repository.
+  - 커밋 하나는 독립적인 버전을 나타냄
+  - The git commit command captures a snapshot of the project's currently staged changes.
+  - 스냅샷(사진)과 유사
 
-#### gitignore
+#### 언제 커밋을 만드는가
+  - logical한 변경이 있을때 커밋을 하나 만듬
+  - 가능하면 커밋 단위는 작을 수록 좋음
+
+### gitignore
 - 프로젝트의 불필요한 환경설정 파일들이 깃에 포함되지 않도록 하는 것
 - gitignore generator를 이용하여, 내가 쓴 언어와 운영체제, 텍스트 에디터 등 맞는 것을 검색해서 생성한다.
 - 모든 저장소에는 gitignore 파일이 존재해야 한다!
