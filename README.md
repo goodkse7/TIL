@@ -1,4 +1,16 @@
 # TIL
+## 2022-10-10
+### SQL 코딩테스트 문제 풀이
+1. SQL Project Planning(해커랭크)
+2. 할부는 몇 개월로 해드릴까요(SolveSQL)
+3. Actors and Directors Who Coperated At Least Three Times (리트코드)<br>
+
+배운 것
+- 한 컬럼이 다른 한 컬럼에 존재하는지 확인하기 위해 IN을 사용할 수 있다.
+- 조건에 맞는 컬럼을 각각 구한 후 합쳐서 프린트해주고 싶을 때, ROW_NUMBER를 사용해서 조인을 해줄 수 있다.
+- ORDER BY 에서도 함수 사용이 가능하다.
+- 문제를 대충 읽고 무작정 코드부터 쓰지 말고, EDA를 꼼꼼하게 하고 테이블을 파악한 후에 코드를 짜자!!!
+- 어떤 조건을 가지고 데이터를 추출할 때, 꼭 서브쿼리를 사용하려 하지 말고 GROUP BY와 HAVING을 활용해보자. 쿼리의 효율성을 고민하기!
 ## 2022-10-07
 ### 데이터 리터러시란
 [링크드인 최창식님의 포스트](https://www.linkedin.com/posts/changsikchoi_%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A6%AC%ED%84%B0%EB%9F%AC%EC%8B%9C%EC%97%90-%EA%B4%80%ED%95%9C-%EC%83%9D%EA%B0%81-%EB%B6%80%EC%A0%9C-%EA%B7%B8%EA%B2%8C-%EB%AD%94%EB%8D%B0-%EC%98%A4%EB%8A%98-%EC%9D%B4%EB%9F%B0%EC%A0%80%EB%9F%B0-activity-6984002682537603072-XJDx?utm_source=share&utm_medium=member_desktop)
