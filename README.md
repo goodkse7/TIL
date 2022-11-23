@@ -1,4 +1,23 @@
 # TIL
+## 2022-11-23
+### 1. [해커랭크 [Print Prime Numbers] 문제 풀이](https://velog.io/@goodkse7/SQL-해커랭크-Print-Prime-Numbers-Stored-Procedure-GROUPCONCAT)
+> **Stored Procedure(저장 프로시저)란?**
+> * Stored Procedure는 반복해서 사용하는 쿼리를 하나의 루틴으로 저장하여 사용할 수 있게 한다.
+> * Function과 비슷한 역할을 하지만, Function은 어떤 값을 리턴하지만 Procedure는 단순히 리턴값 없이 쿼리를 콜한다는 점에서 다르다.
+>* Procedure 내에 기본 `SELECT` 문 뿐만 아니라 `IF`, `CASE`, `WHILE` 등 다양한 구문을 활용할 수 있다.
+
+> **GROUP_CONCAT** <br>
+> `GROUP_CONCAT`은 서로 다른 행에 있는 데이터를 한 줄로 합쳐줄 때 사용한다.
+>```SQL
+>SELECT GROUP_CONCAT([컬럼명] separator [구분자] | ORDER BY [컬럼명])
+>FROM [테이블명]
+>GROUP BY [그룹명]
+> ```
+> * `GROUP BY` 문을 포함하면, 그룹별로 묶어서 해당하는 데이터를 한 줄로 출력해준다.
+> * `GROUP BY` 문을 포함하지 않으면, 모든 데이터를 하나의 그룹으로 보고 한 줄로 출력해준다.
+> * `ORDER BY` 문을 사용하면 특정 컬럼을 기준으로 정렬하여 출력할 수 있다.
+
+### 2. 잡코리아 이력서 작성 및 지원
 ## 2022-11-22
 ### 화난사람들 데이터 기반 프라이싱 프로젝트
 * 팀회의 - 개인별 세부미션 작성 내용 공유
