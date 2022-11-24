@@ -1,4 +1,6 @@
 # TIL
+## 2022-11-24
+카트라이더 트랙 분석 프로젝트 깃 레포지토리 정리, 위키 문서 작성
 ## 2022-11-23
 ### 1. [해커랭크 [Print Prime Numbers] 문제 풀이](https://velog.io/@goodkse7/SQL-해커랭크-Print-Prime-Numbers-Stored-Procedure-GROUPCONCAT)
 > **Stored Procedure(저장 프로시저)란?**
