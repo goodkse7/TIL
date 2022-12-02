@@ -1,4 +1,40 @@
 # TIL
+## 2022-12-02
+### SQL 코딩테스트 연습문제
+1. LeetCode : Rank Scores
+    > SQL의 예약어를 테이블, 컬럼 등을 구분해주는 이름으로 사용할 때는 백틱(``)을 사용하여 감싸주어야 한다.
+    -> [참고링크](https://dev.mysql.com/doc/refman/8.0/en/keywords.html)
+    > ``` SQL
+    > SELECT score,
+    >   DENSE_RANK() OVER (ORDER BY score DESC) AS `rank`
+    > FROM Scores
+    > ORDER BY score DESC;
+    > ```
+    > 위의 쿼리에서 결과물 출력 시 컬럼명으로 사용하고자 한 'rank'는 예약어이기 때문에 ``로 감싸주었다.
+2. SolveSQL : 지역별 주문의 특징
+    > CASE문에 집계함수를 활용하는 방법!! 아래와 같은 형태를 기억하자.
+    > ```SQL
+    > SELECT region AS Region
+    >   ,COUNT(DISTINCT CASE WHEN category = 'Furniture' THEN order_id END) AS Furniture
+    >FROM records
+    > GROUP BY region
+3. LeetCode : Customers Who Never Order
+    ``` SQL 
+    SELECT name AS Customers
+    FROM customers
+    WHERE id IN (
+        SELECT DISTINCT customers.id
+        FROM customers LEFT JOIN orders ON customers.id = orders.customerId
+        WHERE orders.id IS NULL
+    )
+      ```
+    한 번도 주문하지 않은 고객을 찾아내기 위해 처음에는 위와 같이 서브쿼리에 `IN`을 이용하였다. 
+    하지만 `Orders` 테이블 자체가 이미 주문한 고객의 id만 기록되어 있기 때문에, 따로 서브쿼리를 사용하지 않고 아래와 같이 훨씬 더 효율적인 쿼리를 짤 수 있다.
+    ``` SQL
+    SELECT name AS Customers
+    FROM Customers
+    WHERE id NOT IN (SELECT customerId FROM Orders)
+    ```
 ## 2022-11-27
 * 카트라이더 트랙 분석 프로젝트 raw data 파일 깃 레파지토리에 업로드
 * 대용량 파일은 GIT LFS를 다운 받아서 처리해야함
