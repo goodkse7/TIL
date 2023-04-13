@@ -1,4 +1,8 @@
 # TIL
+## 2023-04-13
+### 프로그래머스 - 조건에 맞는 사용자 조회하기
+- [문제 풀고 레슨런 정리](https://growing-cindy.tistory.com/14)
+
 ## 2023-03-09
 ### <그로스해킹> 책 읽기
 (3.3 Retention, 3.4 Revenue, 3.5 Referral) </br>
